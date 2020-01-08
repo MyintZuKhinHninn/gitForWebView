@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sU-4O-b26">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hAB-Rc-jrQ">
+            <objects>
+                <navigationController id="0sU-4O-b26" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SuD-bP-8y0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zow-g1-zkV" kind="relationship" relationship="rootViewController" id="wau-Qg-tOD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ur-7L-HbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="-164"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zfu-YG-ImC">
+            <objects>
+                <viewController storyboardIdentifier="QNAID" id="Zow-g1-zkV" customClass="QNAViewController" customModule="WebViewTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rk8-cp-1M0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxK-JG-0gF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2u-Yi-MeB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uVb-r1-100"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="z7o-zn-ZcX">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="WhB-ft-Y1M">
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u2u-Yi-MeB" firstAttribute="leading" secondItem="Rk8-cp-1M0" secondAttribute="leading" id="Bve-Ug-MhI"/>
+                            <constraint firstItem="u2u-Yi-MeB" firstAttribute="top" secondItem="Rd1-jI-J9d" secondAttribute="top" id="Gc5-XZ-LzI"/>
+                            <constraint firstItem="Rd1-jI-J9d" firstAttribute="bottom" secondItem="YxK-JG-0gF" secondAttribute="bottom" id="Jl0-hP-Y11"/>
+                            <constraint firstItem="YxK-JG-0gF" firstAttribute="leading" secondItem="Rd1-jI-J9d" secondAttribute="leading" id="KXh-p9-SvW"/>
+                            <constraint firstAttribute="trailing" secondItem="u2u-Yi-MeB" secondAttribute="trailing" id="SUr-BY-CPa"/>
+                            <constraint firstItem="YxK-JG-0gF" firstAttribute="top" secondItem="Rd1-jI-J9d" secondAttribute="top" id="gkJ-gt-lT1"/>
+                            <constraint firstItem="Rd1-jI-J9d" firstAttribute="trailing" secondItem="YxK-JG-0gF" secondAttribute="trailing" id="q2f-Dc-VBQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rd1-jI-J9d"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i1H-Wn-5LH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJm-Za-Xra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="-170"/>
+        </scene>
+    </scenes>
+</document>
